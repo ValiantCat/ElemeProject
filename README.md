@@ -18,6 +18,25 @@
 
 
 ##MVVM(Model-View-View Model)
+![MVVM high level.png](http://upload-images.jianshu.io/upload_images/166109-81012f4948373da5.png)
+在MVVM架构中，通常都将view和view controller看做一个整体。相对于之前MVC架构中view controller执行很多在view和model之间数据映射和交互的工作，现在将它交给view model去做。
+至于选择哪种机制来更新view model或view是没有强制的，但通常我们都选择[ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)。ReactiveCocoa会监听model的改变然后将这些改变映射到view model的属性中，并且可以执行一些业务逻辑。
+
+举个例子来说，有一个model包含一个dateAdded的属性，我想监听它的变化然后更新view model的dateAdded属性。但model的dateAdded属性的数据类型是NSDate，而view model的数据类型是NSString，所以在view model的init方法中进行数据绑定，但需要数据类型转换。示例代码如下：
+
+```
+RAC(self,dateAdded) = [RACObserve(self.model,dateAdded) map:^(NSDate*date){ 
+    return [[ViewModel dateFormatter] stringFromDate:date];
+}];
+```
+
+ViewModel调用dateFormatter进行数据转换，且方法dateFormatter可以复用到其他地方。然后view controller监听view model的dateAdded属性且绑定到label的text属性。
+
+```
+RAC(self.label,text) = RACObserve(self.viewModel,dateAdded);
+```
+
+现在我们抽象出日期转换到字符串的逻辑到view model，使得代码可以**测试**和**复用**，并且帮view controller**瘦身**。
 
 ##项目目录结构
 
