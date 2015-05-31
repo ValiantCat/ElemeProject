@@ -41,6 +41,7 @@ RAC(self.label,text) = RACObserve(self.viewModel,dateAdded);
 ##项目目录结构
 
 ##Objective-C 编码规范
+关于Objective-C的编码规范，请参考我翻译的[raywenderlich.com Objective-C编码规范](https://github.com/samlaudev/Objective-C-Coding-Style)
 
 ##iOS 最佳实践
 
