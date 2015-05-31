@@ -49,6 +49,8 @@ RAC(self.label,text) = RACObserve(self.viewModel,dateAdded);
 * [AFNetworking](https://github.com/AFNetworking/AFNetworking)
 * [Mantle](https://github.com/Mantle/Mantle)
 * [Masonry](https://github.com/SnapKit/Masonry)
+* [Classy](https://github.com/cloudkite/Classy)
+* [ClassyLiveLayout](https://github.com/olegam/ClassyLiveLayout)
 * [Kiwi](https://github.com/kiwi-bdd/Kiwi)
 
 <b id="development_proces"></b>
