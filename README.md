@@ -56,7 +56,10 @@ RAC(self.label,text) = RACObserve(self.viewModel,dateAdded);
 
 <b id="development_proces"></b>
 #Development Process
-![](https://raw.githubusercontent.com/samlaudev/ElemeProject/master/ScreenShots/Scrum-Development-Process.jpg)
+<div align="center">
+<img src="https://raw.githubusercontent.com/samlaudev/ElemeProject/master/ScreenShots/Scrum-Development-Process.jpg"/>
+</div>
+
 
 ##Prodcut Backlog
 ##Sprint计划
