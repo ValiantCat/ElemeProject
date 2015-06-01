@@ -60,8 +60,34 @@ RAC(self.label,text) = RACObserve(self.viewModel,dateAdded);
 <img src="https://raw.githubusercontent.com/samlaudev/ElemeProject/master/ScreenShots/Scrum-Development-Process.jpg"/>
 </div>
 
+根据上面图示，我们简单概括Scrum的开发过程：
+
+1. **Product Owner**(一般都是产品经理)从实际用户、交互设计师、开发人员和测试人员中收集用户故事，从而创建**Product Backlog**来记录所有的用户故事。
+2. 
 
 ##Prodcut Backlog
+###1. 用户角色建模
+####用户角色
+很多时候需求分析人员都是从**单一的角度**来编写用户故事，但这样往往会容易忽略一些故事，因为有些故事并不能反映所有用户的**背景、经历和目标**。
+####角色建模步骤
+1. 通过头脑风暴，列出初始的用户角色集合
+2. 整合角色
+3. 提炼角色
+4. 角色建模
+
+####虚构人物
+虚构人物能够真正代表产品的目标用户，从虚构角度来描述故事会变得更加生动，更贴近用户使用过程。
+
+####极端人物
+极端人物很可能会让你编写出原本可能**遗漏**的故事。
+
+###2. 编写用户故事
+
+###3. 估算用户故事
+
+###4. 测试用户故事
+
+
 ##Sprint计划
 ##Sprint Backlog
 ##1-4 Week Sprint
